@@ -11,22 +11,24 @@ int main() {
     
     /*Na aprimeira étapa do jogo, iremos criar as vairaveis*/
 
-    int carta1 = 550.000;
-    int carta2 = 450.000;
+    /*Na aprimeira étapa do jogo, iremos criar as vairaveis*/
+
+    int riodejaneiro, saopaulo ;
+
+        riodejaneiro = 550.000;
+        saopaulo = 450.000;
     /*Na segunda étapa do jogo, iremos criar os valores*/
 
-    printf("escolha a sua carta\n");
-    scanf("%d", &carta1,carta2 );
+    printf("escolha a sua cidade: \n");
+    scanf("%d", &riodejaneiro,saopaulo );
     /*Na terceira étapa do jogo, iremos verificar*/
 
-    if (carta1 < carta2) {   
-        printf(" Rio de janeiro tem menas população \n");
-    }
-    else
-    { printf("Sao paulo tem mais população \n");
-    }
+    if (riodejaneiro > saopaulo) {   
+        printf(" Rio de janeiro tem mais população \n");}
+    else{ printf("Sao paulo tem menas população \n");}
 
-    
+    printf("A cidade venceedora e :%d \n", riodejaneiro);
+   
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
